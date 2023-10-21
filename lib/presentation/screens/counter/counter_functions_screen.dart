@@ -13,7 +13,7 @@ class _CounterFuctionsScreenState extends State<CounterFuctionsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Counter Functions'), actions: [
+        appBar: AppBar(title: const Text('Counter Functions Cambio'), actions: [
           IconButton(
             icon: const Icon(Icons.refresh_outlined),
             onPressed: () {
