@@ -14,7 +14,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('Counter Screen')),
+        title: const Center(child: Text('Counter Screen CAMBIO')),
       ),
       body: Center(
           child: Column(
