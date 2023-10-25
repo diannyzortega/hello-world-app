@@ -13,7 +13,7 @@ class _CounterFuctionsScreenState extends State<CounterFuctionsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Counter Functions aa'), actions: [
+        appBar: AppBar(title: const Text('Counter Functions'), actions: [
           IconButton(
             icon: const Icon(Icons.refresh_outlined),
             onPressed: () {
@@ -47,6 +47,17 @@ class _CounterFuctionsScreenState extends State<CounterFuctionsScreen> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             FloatingActionButton(
+              shape: const StadiumBorder(),
+              onPressed: () {
+                setState(() {
+                  clickCounter = 0;
+                });
+              },
+              child: const Icon(Icons.refresh_outlined),
+            ),
+            const SizedBox(height: 10),
+            FloatingActionButton(
+              shape: const StadiumBorder(),
               onPressed: () {
                 setState(() {
                   clickCounter += 1;
@@ -56,6 +67,7 @@ class _CounterFuctionsScreenState extends State<CounterFuctionsScreen> {
             ),
             const SizedBox(height: 10),
             FloatingActionButton(
+              shape: const StadiumBorder(),
               onPressed: () {
                 setState(() {
                   clickCounter--;
